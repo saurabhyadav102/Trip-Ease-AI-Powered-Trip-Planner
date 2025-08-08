@@ -29,7 +29,7 @@ function Viewtrip() {
         else console.log("no data found")
     }
   return (
-    <div className='p-10 sm:p-15'>
+    <div className='p-10 sm:p-15 overflow-x-hidden'>
          {/* Infomation section */}
 
          <Information  trip={trip}/>

@@ -11,14 +11,11 @@ function Recommended({trip}) {
                    
                    
                   <Link to={'https://www.google.com/maps/search/?api=1&query='+hotel?.hotelName+','+ hotel?.hotelAddress} target='_blank'>
-                    
+                    {console.log(hotel.hotelImageUrl)}
                         <div  
                              key={index}
-                        className='hover:scale-105 transition-all cursor-pointer'>
-                           const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-                       const imageUrl = proxyUrl + hotel.hotelImageUrl;
-                      {/* <img src={imageUrl} className="rounded-lg" alt="Hotel Image" />; */}
-                     {console.log(proxyUrl)}
+                       className='hover:scale-105 transition-all cursor-pointer'>
+                        <img src={hotel.hotelImageUrl} className='w-[130px] h-[130px] rounded-xl' />
                             <div className='my-2'>
                            
                        

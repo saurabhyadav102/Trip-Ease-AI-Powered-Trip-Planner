@@ -86,6 +86,7 @@ function Createtrip() {
     .replace('{totaldays}',formdata?.noOfdays)
     
     const result =await chatSession.sendMessage(FINAL_prompt)
+  
     console.log(result?.response?.text());
     setloading(false);
     SaveTrip(result?.response?.text());
@@ -95,6 +96,7 @@ function Createtrip() {
     setloading(true);
      const user=JSON.parse(localStorage.getItem('user')||"{}");
      const docId=Date.now().toString()
+    console.log(JSON.parse(tripData))
     await setDoc(doc(db,'AITrip',docId),{
          userselection:formdata,
          tripdata:JSON.parse(tripData),
