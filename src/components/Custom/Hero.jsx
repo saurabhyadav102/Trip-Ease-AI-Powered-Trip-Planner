@@ -9,7 +9,9 @@ function Hero() {
         <Link to={'/create-trip'}>
             <button className='bg-black text-white rounded-md p-2 hover:scale-105 hover:text-amber-100 mt-10 animate-slide-in-up cursor-pointer'>Get Started, it's Free</button>
         </Link>
-          
+     
+          <img src="/landing2.png" className='mt-10 rounded-3xl ' />
+         
     </div>
   )
 }

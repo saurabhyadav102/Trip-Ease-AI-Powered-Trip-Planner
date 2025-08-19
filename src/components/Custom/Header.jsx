@@ -40,9 +40,17 @@ function UserMenu({ user }) {
   return (
     <div className="flex items-center gap-4">
       {/* --- My Trips Button (Sized Down) --- */}
+       <a href='/create-trip'>
+      <button className="text-black border-2 rounded-full px-4 py-1.5 hover:scale-105 font-semibold text-sm text-center hover:bg-gray-100 transition-all">
+        + Create trip
+      </button>
+      </a>
+
+      <a href='/my-trips'>
       <button className="text-black border-2 rounded-full px-4 py-1.5 hover:scale-105 font-semibold text-sm text-center hover:bg-gray-100 transition-all">
         My Trips
       </button>
+      </a>
 
       {/* --- Dropdown Container --- */}
       <div className="relative" ref={dropdownRef}>
